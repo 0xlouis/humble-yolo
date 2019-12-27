@@ -1,10 +1,17 @@
-humble-yolo is a minimal implementation of YOLO v1 I wrote to learn about the amazing YOLO algorithm.
+This fork tries to fix the problems related to the learning.
 
-To test it run :
+dependecies:
+* Keras
+* Pillow
+* Matplotlib
 
-1. generate-dataset.py to generate data
-2. main.py --train --epoch 20 for training the network
+With `yolo_char.py` you can train/test the YOLO algorithm.
+Simply comment/uncomment sections at the end of file:
+* `Sample` : Take a look at the data used.
+* `Train` : Train the YOLO network.
+* `Sample pred` : Check YOLO predictions.
 
-You should see a list of images with bounding boxes. The first 10 images are test data not used for training. You can evaluate the performance of the network on those. The remaining images have been used for the training.
+All datas was generated on the fly.
+The wheights of the network was saved in `weights.h5`.
 
-main.py saves weights when it complete training. If you want to run the network without training and just see the result, running main.py alone will load last weights and redisplay results.
+By default the file `weights.h5` contains the values for a loss of ~0.002.
