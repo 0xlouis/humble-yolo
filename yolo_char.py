@@ -4,7 +4,7 @@ from keras.layers import Dense, Dropout, Flatten, Input, Reshape
 from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
 from keras.layers.advanced_activations import LeakyReLU, PReLU, ELU
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
-from tensorflow.keras import backend as K
+from keras import backend as K
 from keras.models import load_model
 from keras.utils import np_utils
 
